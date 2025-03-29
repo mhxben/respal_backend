@@ -14,7 +14,7 @@ class CustomizationSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class CustomizationCategorySerializer(serializers.ModelSerializer):
-    product_name = serializers.CharField(source='product.name', read_only=True)
+    product_name = serializers.CharField(source='pro``duct.name', read_only=True)
     customizations = CustomizationSerializer(many=True, read_only=True)
 
     class Meta:

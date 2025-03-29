@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'orders1',
     'django.contrib.admin',
+    'drf_yasg'
 ]
 
 MIDDLEWARE = [
