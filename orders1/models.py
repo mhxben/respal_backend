@@ -29,6 +29,7 @@ class CustomizationCategory(models.Model):
 class Customization(models.Model):
     category = models.ForeignKey(CustomizationCategory, on_delete=models.CASCADE, related_name="customizations")
     name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to = 'custom/' ,null = True , blank = True)
     price = models.FloatField()
 
     def __str__(self):
